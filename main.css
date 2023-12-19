@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+main{
+    height: calc(100vh - 50px);
+    display: flex;
+    background-color: black;
+}
+.imgdiv{
+    margin: 60px 120px 50px 120px;
+}
+.img{
+display: flex;
+  border-radius: 2000px;
+  height: 75vh;
+  box-shadow: 0 0 30px 3px aquamarine;
+}
+
+.cnt{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name{
+    display: flex;
+    color: aquamarine;
+    font-size: 25px;
+    margin: 100px 50px 17px 50px;
+   font-family: 'poppins' , sans-serif;
+    text-shadow: 5px 5px 7px aliceblue;
+    opacity: 0.7;
+    
+}
+.webd1{
+font-size: 70px;
+color: aliceblue;
+font-family: 'Poppins', sans-serif;
+margin-bottom: -30px;
+
+
+}
+.dev1{
+    
+    font-size: 70px;
+    color: aquamarine;
+    font-family: 'Poppins', sans-serif;
+    border-right: 2px solid aliceblue;
+    width: 54%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 2s steps(9) infinite alternate,
+    cursor .5s step-end infinite alternate;
+}
+.content{
+    font-size: 15px;
+    color: aliceblue;
+    margin: 50px 40px 0px 40px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+}
+@keyframes cursor {
+    50%{ border-color: transparent}
+}
+@keyframes typing {
+    from{ width: 0 }
+    
+}
+.foot{
+    margin-top: 55px;
+    width: 680px;
+    height: 7vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: aquamarine;
+    box-shadow: 0 0 20px 3px aquamarine;
+    margin: 0 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+.social a .fa-brands{
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+.social a .fa-solid{
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+.social a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg, #ed1c94,#ffec17);
+    position: absolute;
+    transition: 0.5s;
+}
+.social a:hover::after{
+    top: 0;
+}
+.social a:hover .fa-brands{
+    color: black;
+}
+.social a:hover .fa-solid{
+    color: black;
+}
+.social a:hover{
+    transform: translateY(-10px);
+}

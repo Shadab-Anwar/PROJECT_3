@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 50px;
+    display: flex;
+    background: black;
+    align-items: center;
+}
+.head1{
+    display: flex;
+    margin: 0px 0px 0px 275px;
+    font-size: 40px;
+    transition-timing-function: cubic-bezier(0.785,0.135,0.15,0.86);
+    animation: fadein 1.5s forwards infinite alternate;
+    opacity: 0;
+}
+.head2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 505px;
+    font-size: 14px;
+}
+.lst1{
+    display: flex;
+}
+.lst1 a{
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s;
+    color: aquamarine;
+    padding: 3px 3px;
+}
+a:hover{
+    background-color: aquamarine;
+    color: rgb(44, 47, 47);
+}
+a::before{
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    height: 12px;
+    width: 12px;
+    border: 3px solid aquamarine;
+    border-width: 0 0 2px 2px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+a::after{
+    content: "";
+    position: absolute;
+    height: 12px;
+    top: 12px;
+    right: 12px;
+    width: 12px;
+    border: 3px solid aquamarine;
+    border-width: 2px 2px 0 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+a:hover::before{
+    opacity: 1;
+    bottom:-5px;
+    left: -5px;
+}
+a:hover::after{
+    opacity: 1;
+    top: -5px;
+    right: -5px;
+}
+.h{
+    margin: 0px 25px 0px 12px;
+    color: aquamarine;
+}
+.a{
+    margin: 0px 25px 0px 25px;
+    color: aquamarine;
+}
+.s{
+    margin: 0px 25px 0px 25px;
+    color: aquamarine;
+}
+.c{
+    margin: 0px 25px 0px 25px;
+    color: aquamarine;
+}
+.port{
+    color: aquamarine;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    text-shadow: 5px 5px 7px aliceblue;
+    display: inline-block;
+    animation: firstspan 1.5s forwards cubic-bezier(0.785,0.135,0.15,0.86) ;
+    z-index: 1;
+    position: relative;
+
+    
+}
+.folio{
+    color: aliceblue;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    text-shadow: 5px 5px 7px aquamarine;
+    opacity: 0.7;
+    display: inline-block;
+    font-weight: 100;
+    z-index: -1;
+    animation: secondspan 1.5s forwards cubic-bezier(0.785,0.135,0.15,0.86) ;
+
+}
+.slide{
+    display: inline-flex;
+    overflow: hidden;
+    padding-right: 13px;
+}
+@keyframes fadein {
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes firstspan {
+    0%{
+        transform: translateX(50%);
+    }
+    60%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+@keyframes secondspan {
+    0%{
+        transform: translateX(-100%);
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+    
+}
